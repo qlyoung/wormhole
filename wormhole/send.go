@@ -506,7 +506,7 @@ type zipResult struct {
 }
 
 func makeTmpZip(directoryName string, entries []DirectoryEntry) (*zipResult, error) {
-	f, err := os.CreateTemp("", "wormhole-william-dir")
+	f, err := os.CreateTemp("/home/qlyoung/tmp", "wormhole-william-dir")
 	if err != nil {
 		return nil, err
 	}
